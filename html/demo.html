@@ -13,16 +13,17 @@
 <button> 按钮1</button>
 <button> 按钮2</button>
 <button> 按钮3</button>
-<button> 按钮4</button>
+<button onclick="alert('111')"> 按钮4</button>
 <script>
   const buttonList = document.querySelectorAll('button');
   buttonList.forEach(button => {
-    button.addEventListener('click', (event) => {
+    button.addEventListener('click', (event,) => {
       document.querySelector('.pink') && (document.querySelector('.pink').className = '');
       const ele = event.target;
       ele.className = 'pink';
     });
   });
+  prompt('111');
 </script>
 </body>
 </html>
